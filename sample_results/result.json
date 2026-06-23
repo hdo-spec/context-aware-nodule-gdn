@@ -1,0 +1,43 @@
+{
+  "model": "gdn",
+  "crop_size": "32",
+  "threshold": 0.1553,
+  "threshold_method": "youden_val",
+  "eval_unit": "nodule",
+  "test_loss": 0.5968,
+  "test_loss_unit": "slice",
+  "test_auc": 0.8939,
+  "test_accuracy": 0.8188,
+  "test_sensitivity": 0.8404,
+  "test_specificity": 0.8083,
+  "n_nodules": 287,
+  "n_malignant": 94,
+  "n_benign": 193,
+  "subgroup_auc": {
+    "small": {
+      "auc": 0.8421,
+      "n": 84,
+      "n_benign": 76,
+      "n_malignant": 8
+    },
+    "intermediate": {
+      "auc": 0.625,
+      "n": 83,
+      "n_benign": 72,
+      "n_malignant": 11
+    },
+    "large": {
+      "auc": 0.8975,
+      "n": 120,
+      "n_benign": 45,
+      "n_malignant": 75
+    },
+    "unknown": {
+      "auc": null,
+      "n": 0,
+      "n_benign": 0,
+      "n_malignant": 0
+    }
+  },
+  "subgroup_basis": "volume_mm3"
+}
